@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaf1f8;
+      color: #24364b;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    nav {
+      background: #dceafa;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      background: #2463a6;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 5px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background: #123c69;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 25px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    .informasi {
+      background: #edf5ff;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #bdcddd;
+      border-radius: 7px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background: #2463a6;
+      color: white;
+      padding: 13px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #123c69;
+    }
+
+    footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 15px;
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap menerima pertanyaan dan saran kamu.</p>
+  </header>
+
+  <nav>
+    <a href="utama.html">Home</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <h2>Informasi Kontak</h2>
+
+    <div class="informasi">
+      <p><strong>Nama:</strong> Website Saya</p>
+      <p><strong>Email:</strong> emailcontoh@gmail.com</p>
+      <p><strong>Alamat:</strong> Malang, Jawa Timur</p>
+      <p><strong>Jam Layanan:</strong> Senin - Jumat</p>
+    </div>
+
+    <h2>Kirim Pesan</h2>
+    <p>Isi formulir berikut untuk menulis pesan.</p>
+
+    <form id="formKontak">
+      <label for="nama">Nama Lengkap</label>
+      <input
+        type="text"
+        id="nama"
+        placeholder="Masukkan nama kamu"
+        required>
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Masukkan email kamu"
+        required>
+
+      <label for="pesan">Pesan</label>
+      <textarea
+        id="pesan"
+        placeholder="Tuliskan pesan kamu..."
+        required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <p id="hasil" role="status"></p>
+  </main>
+
+  <footer>
+    Copyright © 2026 Website Saya
+  </footer>
+
+  <script>
+    document.getElementById("formKontak")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("hasil").textContent =
+          "Formulir berhasil diisi! Untuk mengirim pesan sungguhan, website perlu dihubungkan ke layanan pengiriman pesan.";
+
+        this.reset();
+      });
+  </script>
+
+</body>
+</html>

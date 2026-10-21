@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Kami</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaf1f8;
+      color: #24364b;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    nav {
+      background: #dceafa;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      background: #2463a6;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 5px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background: #123c69;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    .daftar-produk {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .produk {
+      background: #f8fbff;
+      border: 1px solid #d8e3ef;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .produk:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px #00000018;
+    }
+
+    .produk img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .harga {
+      color: #176b45;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .tombol {
+      display: inline-block;
+      background: #2463a6;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 7px;
+    }
+
+    footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 700px) {
+      .daftar-produk {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Produk Kami</h1>
+    <p>Temukan produk favoritmu di sini!</p>
+  </header>
+
+  <nav>
+    <a href="utama.html">Home</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <h2>Daftar Produk</h2>
+    <p>Berikut beberapa produk pilihan kami.</p>
+
+    <div class="daftar-produk">
+
+      <div class="produk">
+        <img
+          src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80"
+          alt="Sepatu">
+        <h3>Sepatu Sneakers</h3>
+        <p>Sepatu nyaman untuk aktivitas sehari-hari.</p>
+        <p class="harga">Rp250.000</p>
+        <a class="tombol" href="kontak.html">Tanya Produk</a>
+      </div>
+
+      <div class="produk">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+          alt="Jam tangan">
+        <h3>Jam Tangan</h3>
+        <p>Jam tangan dengan desain modern.</p>
+        <p class="harga">Rp150.000</p>
+        <a class="tombol" href="kontak.html">Tanya Produk</a>
+      </div>
+
+      <div class="produk">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+          alt="Headphone">
+        <h3>Headphone</h3>
+        <p>Nikmati musik dengan nyaman.</p>
+        <p class="harga">Rp200.000</p>
+        <a class="tombol" href="kontak.html">Tanya Produk</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Copyright © 2026 Website Saya
+  </footer>
+
+</body>
+</html>

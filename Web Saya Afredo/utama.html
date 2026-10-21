@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Saya</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+/* Banner lebih menarik */
+.banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/* Efek tampilan kartu */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px #123c6915;
+}
+
+/* Judul lebih modern */
+h1 {
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Tombol lebih halus */
+nav a,
+.tombol {
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+.tombol:hover {
+  background: #0b2948;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  letter-spacing: 0.5px;
+}
+
+    
+/* Animasi saat halaman dibuka */
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  animation: muncul 0.8s ease;
+}
+
+.banner {
+  animation: muncul 1s ease;
+}
+
+main {
+  animation: muncul 1.2s ease;
+}
+
+/* Efek tombol menu */
+nav a {
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px #00000015;
+}
+
+nav a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px #00000025;
+}
+
+/* Efek kartu gambar */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px #123c6920;
+}
+
+/* Gambar membesar saat disentuh */
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+/* Efek tombol saat diklik */
+a:active {
+  transform: scale(0.96);
+}
+
+/* Tampilan judul */
+h2 {
+  color: #123c69;
+  border-left: 5px solid #2463a6;
+  padding-left: 12px;
+}
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaf1f8;
+      color: #24364b;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 25px auto;
+      background: white;
+      border: 2px solid #b5c7d9;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px #00000018;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .banner {
+      height: 240px;
+      background:
+        linear-gradient(#0003, #0003),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 15px;
+      background: #dceafa;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: #2463a6;
+      padding: 12px 22px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background: #123c69;
+      transform: translateY(-2px);
+    }
+
+    main {
+      padding: 25px;
+      min-height: 250px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #d8e3ef;
+      border-radius: 10px;
+      padding: 18px;
+      background: #f8fbff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .banner {
+        height: 160px;
+        font-size: 28px;
+      }
+
+      nav a {
+        padding: 10px 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WEBSITE SAYA</h1>
+      <p>Selamat datang di website kami</p>
+    </header>
+
+    <div class="banner">
+      Ima​ge
+    </div>
+
+    <nav>
+      <a href="utama.html">Home</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <main>
+      <h2>Selamat Datang</h2>
+      <p>
+        Selamat datang di website saya.
+        Di sini kamu bisa melihat galeri foto,
+        produk menarik, dan informasi kontak.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+               alt="Pemandangan alam">
+          <h3>Galeri Foto</h3>
+          <p>Lihat koleksi foto menarik di halaman galeri.</p>
+          <a href="galeri.html">Lihat Galeri</a>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80"
+               alt="Sepatu produk">
+          <h3>Produk Kami</h3>
+          <p>Temukan berbagai produk yang tersedia.</p>
+          <a href="produk.html">Lihat Produk</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Copyright © 2026 Website Saya
+    </footer>
+
+  </div>
+</body>
+</html>

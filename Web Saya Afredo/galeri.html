@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #eaf1f8;
+      color: #24364b;
+    }
+    header, footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #dceafa;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 5px;
+      padding: 12px 18px;
+      background: #2463a6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    main {
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+    }
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .galeri img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    @media (max-width: 600px) {
+      .galeri { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galeri Foto</h1>
+    <p>Koleksi foto menarik</p>
+  </header>
+
+  <nav>
+    <a href="utama.html">Home</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <h2>Koleksi Galeri</h2>
+    <div class="galeri">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Pemandangan danau">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Pemandangan alam">
+      <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80" alt="Satwa di alam">
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80" alt="Hutan hijau">
+    </div>
+  </main>
+
+  <footer>
+    Copyright © 2026 Website Saya
+  </footer>
+</body>
+</html>
