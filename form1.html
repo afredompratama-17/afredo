@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Diri</title>
+</head>
+<body>
+<form action=""method="post">
+        <table align="center">
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" name="txtuser" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="txtpass" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Umur</td>
+                <td>
+                    <input type="number" name="txtumur" min="1">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" name="tgllahir">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-laki" checked>
+                    Laki-laki
+                    <br>
+                    <input type="radio" name="jk" value="Perempuan">
+                    Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select name="jurusan">
+                        <optgroup label="FTD">
+                            <option value="TI">Teknik Informatika</option>
+                            <option value="SK">Sistem Komputer</option>
+                            <option value="DKV">Desain Komunikasi Visual</option>
+                        </optgroup>
+
+                        <optgroup label="FEB">
+                            <option value="AK">Akuntansi</option>
+                            <option value="MAN">Manajemen</option>
+                        </optgroup>
+                    </select>,</td>
+            </tr>
+            </tr>
+            <td></td>
+            <td></input type="submit" value="kirim" nama="cmdkirim">
+            <input type="reset" value="Batal" name ="cmdbatal"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
